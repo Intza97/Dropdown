@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--==================== METADATOS ====================-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Dropdown">
+  <meta name="keywords" content="HTML-CSS-JS">
+  <meta name="author" content="Rocio Cuello">
+
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!--==================== TITULO ====================-->
+  <title>Dropdown | Animated Dropdown Menu</title>
+
+  <!--==================== ICONO DE PESTAÑA ====================-->
+  <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
+</head>
+<body>
+  <div class="dropdown">
+    <input type="text" class="text02" readonly placeholder="Dropdown Menu">
+    <div class="option">
+      <div onmouseover="show('Html')">Html</div>
+      <div onmouseover="show('Css')">Css</div>
+      <div onmouseover="show('Js')">Js</div>
+      <div onmouseover="show('ReactJS')">ReactJS</div>
+      <div onmouseover="show('NodeJS')">NodeJS</div>
+    </div>
+  </div>
+
+  <!--==================== SCRIPT ====================-->
+  <script>
+    function show(a) {
+      document.querySelector('.text02').value = a;
+    }
+ let dropdown= document.querySelector('.dropdown');
+ dropdown.onclick = function() {
+      dropdown.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
