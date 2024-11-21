@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <!--==================== METADATOS ====================-->
   <meta charset="UTF-8">
@@ -22,23 +22,22 @@
   <div class="dropdown">
     <input type="text" class="text02" readonly placeholder="Dropdown Menu">
     <div class="option">
-      <div onmouseover="show('Html')">Html</div>
-      <div onmouseover="show('Css')">Css</div>
-      <div onmouseover="show('Js')">Js</div>
-      <div onmouseover="show('ReactJS')">ReactJS</div>
-      <div onmouseover="show('NodeJS')">NodeJS</div>
+    <div onmouseover="show('Html')">Html</div>
+    <div onmouseover="show('Css')">Css</div>
+    <div onmouseover="show('Js')">Js</div>
+    <div onmouseover="show('ReactJS')">ReactJS</div>
+    <div onmouseover="show('NodeJS')">NodeJS</div>
     </div>
   </div>
-
   <!--==================== SCRIPT ====================-->
   <script>
-    function show(a) {
-      document.querySelector('.text02').value = a;
-    }
- let dropdown= document.querySelector('.dropdown');
- dropdown.onclick = function() {
-      dropdown.classList.toggle('active');
-    }
+  function show(a) {
+  document.querySelector('.text02').value = a;
+  }
+  let dropdown= document.querySelector('.dropdown');
+  dropdown.onclick = function() {
+  dropdown.classList.toggle('active');
+  }
   </script>
 </body>
 </html>
